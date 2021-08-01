@@ -1,0 +1,166 @@
+<div class="header">
+  <nav class="header-top">
+    <div class="header-menu">
+      <div class="header-menu-icon">
+        <mat-icon>menu</mat-icon>
+      </div>
+      <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" class="header-menu-logo">
+      <!-- <div class="header-address-icon">
+        <mat-icon class="address">room</mat-icon>
+      </div> -->
+      <div class="header-menu-address-text">
+        <span class="header-menu-top-address-item"> Hello</span>
+        <span class="header-menu-bottom-address-item"> Select your address</span>
+      </div>
+      <div class="header-menu-searchBar">
+        <input type="text" class="searchBar-input">
+        <div class="header-menu-searchBar-icon">
+          <mat-icon>search</mat-icon>
+        </div>
+      </div>
+      <div class="header-menu-signIn">
+        <span class="header-menu-top-item"> Hello, Please sign in</span>
+        <span class="header-menu-bottom-item"> Accounts & Lists</span>
+      </div>
+      <div class="header-menu-signIn">
+        <span class="header-menu-top-item"> Returns</span>
+        <span class="header-menu-bottom-item"> & Orders</span>
+      </div>
+      <div class="header-menu-cart">
+        <mat-icon>shopping_cart</mat-icon>
+        <p class="header-cart-numbers">3</p>
+      </div>
+    </div>
+  </nav>
+  <nav class="header-bottom">
+    <div class="header-bottom-location-text">
+      <span class="header-left-line-one">Delivery to</span>
+      <span class="header-left-line-two"> <Strong>Canada</Strong></span>
+  </div>
+  </nav>
+</div>
+
+//css file
+
+.header{
+  /* //we can do this later */
+position: sticky;
+z-index: 100;
+top: 0;
+}
+.header-top{
+  height: 60px;
+  background-color: #131A22;
+  font-size: 14px;
+  display: flex;
+  color: #fff;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+.header-menu{
+  display: flex;
+  /* padding: 10px 40px 10px 8px; */
+  width: 100%;
+}
+.header-menu > div{
+  margin: 15px;
+}
+.header-menu-icon > mat-icon{
+  font-size: 30px;
+  align-items: center;
+}
+.header-menu-searchBar{
+  display: flex;
+  margin-top: 8px;
+  height: 40px;
+  justify-content: center;
+  /* flex: 1; */
+}
+.searchBar-input{
+  height: 20px;
+  padding: 20px;
+  border: none;
+  width: 600px;
+  border-radius: 5px 0px 0px 5px;
+  padding-right: 10px;
+  outline: none;
+}
+.header-menu-searchBar-icon{
+  background-color: #febd69;
+  height: 40px;
+  width: 40px;
+  color: #0f1111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
+  transform: scale(.7s);
+}
+.header-menu-searchBar-icon:hover{
+  transition-duration: .2s;
+  background: #4e5d70;
+  translate: transparent ;
+}
+.header-menu-logo{
+object-fit: contain;
+width: 90px;
+margin: 12px 20px 0px 2px;
+}
+
+.header-menu-address-text{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.header-menu-top-address-item{
+  font-size: 14px;
+  color: lightgray;
+  /* padding-right: 30px; */
+}
+.header-menu-bottom-address-item{
+  font-size: 14px;
+  font-weight: 800;
+  /* padding-left: 30px; */
+}
+.header-menu-signIn{
+  display: flex;
+  flex-direction: column;
+}
+.header-menu-top-item{
+  font-size: 14px;
+  color: lightgray;
+  padding-left: 10px;
+}
+.header-menu-bottom-item{
+  font-size: 14px;
+  font-weight: 800;
+  padding-left: 10px;
+}
+.header-menu-cart{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 8px;
+  height: 50px;
+  justify-content: space-around;
+}
+.header-cart-numbers{
+  color :#febd69;
+  font-size: 25px;
+  font-weight: 800;
+}
+.header-bottom{
+  height: 40px;
+  background-image: none;
+  background-color:  #37475A;
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+  padding-left: 8px;
+  font-size: 12px;
+}
+.header-bottom-location-text{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
